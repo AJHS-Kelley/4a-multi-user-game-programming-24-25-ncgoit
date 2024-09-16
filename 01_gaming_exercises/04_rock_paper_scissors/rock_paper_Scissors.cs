@@ -16,6 +16,11 @@ class Template {
     Console.Writeline("Rules:")
     Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.")
     Console.Writeline("The first player to score 5 points wins.");
-    
+    // Random number generator for CPU
+    Random random = new Random();
+    while (playerScore < 5 && cpuScore < 5)
+    {
+      
+    }
   }
 }
