@@ -20,7 +20,15 @@ class Template {
     Random random = new Random();
     while (playerScore < 5 && cpuScore < 5)
     {
-      
+      // Display choices and ask for player input.
+      Console.Writeline("\nChoose: 1 for Rock, 2 for Paper, 3 for Scissors.");
+      playerChoice = Convert.ToInt32(Console.Readline());
+      // Generate a random Number between 1 and 3 for CPU choice.
+      cpuChoice = random.Next(1,4);
+      // Display choices
+      Console.Writeline(playerName + "chose: " + ChoiceToString(playerChoice));
+      Console.Writeline("CPU chpse: " + ChoiceToString(cpuChoice));
+
     }
   }
 }
