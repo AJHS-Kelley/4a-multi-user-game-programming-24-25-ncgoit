@@ -1,5 +1,5 @@
 using System;
-class Template 
+class Template
 {
   static void Main() 
   {
@@ -16,7 +16,7 @@ class Template
     // Output game rules.
     Console.Writeline("Welcome, " + playerName + "! Let's play Rock, Paper, Scissors.");
     Console.Writeline("Rules:")
-    Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.");
+    Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.")
     Console.Writeline("The first player to score 5 points wins.");
     // Random number generator for CPU
     Random random = new Random();
@@ -52,16 +52,16 @@ class Template
     Console.Writeline("CPU Score: " + cpuScore);
   }
 
-  // Announce overall winner
-  if (playerScore == 5)
-  {
-    Console.Writeline(playerName + " wins the game!");
+    // Announce overall winner
+    if (playerScore == 5)
+    {
+      Console.Writeline(playerName + " wins the game!");
+    }
+    else
+    {
+      Console.Writeline("CPU wins the game!");
+    }
   }
-  else
-  {
-    Console.Writeline("CPU wins the game!");
-  }
-}
   // Function to convert the number choice into a string.
   static string ChoiceToString(int choice)
   {
