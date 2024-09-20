@@ -5,8 +5,8 @@ class Template
   {
     string playerName = "Test Player";
     // Player and CPU score.
-    int playerScore;
-    int cpuScore;
+    int playerScore = 0;
+    int cpuScore = 0;
     // Player and CPU variable to store choices.
     int playerChoice;
     int cpuChoice;
@@ -35,9 +35,9 @@ class Template
     {
       Console.Writeline("It's a tie! No points awarded.");
     }
-      else if ((playerChoice == 1 && cpuChoice == 3) || // Rocks beats Scissors
-      (playerChoice == 2 && cpuChoice == 1) || // Paper beats Rock
-      (playerChoice == 3 && cpuChoice == 2)) || // Scissors beats Paper
+      else if ((playerChoice == 1 && cpuChoice == 3) || 
+      (playerChoice == 2 && cpuChoice == 1) ||
+      (playerChoice == 3 && cpuChoice == 2))
     {
       Console.Writeline(playerName + " wins this round!");
       playerScore++;
