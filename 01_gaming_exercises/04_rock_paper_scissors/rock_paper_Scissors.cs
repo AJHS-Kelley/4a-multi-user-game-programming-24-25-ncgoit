@@ -28,7 +28,23 @@ class Template {
       // Display choices
       Console.Writeline(playerName + "chose: " + ChoiceToString(playerChoice));
       Console.Writeline("CPU chpse: " + ChoiceToString(cpuChoice));
-
+      // Determine winner
+      if (playerChoice == cpuChoice)
+    {
+      Console.Writeline("It's a tie! No points awarded.");
     }
+      else if ((playerChoice == 1 && cpuChoice == 3) || // Rocks beats Scissors
+      (playerChoice == 2 && cpuChoice == 1) || // Paper beats Rock
+      (playerChoice == 3 && cpuChoice == 2)) || // Scissors beats Paper
+    {
+      Console.Writeline(playerName + " wins this round!");
+      playerScore++;
+    }
+    else
+    {
+      Console.Writeline("CPU wins this round!");
+      cpuScore++;
+    }
+    
   }
 }
