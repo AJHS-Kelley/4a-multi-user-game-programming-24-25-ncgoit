@@ -45,6 +45,19 @@ class Template {
       Console.Writeline("CPU wins this round!");
       cpuScore++;
     }
-    
+    // Display current score
+    Console.Writeline(playerName + " Score: " + playerScore);
+    Console.Writeline("CPU Score: " + cpuScore);
+  }
+
+  // Determine overall winner
+  if (playerScore == 5)
+  {
+    Console.Writeline(playerName + " wins the game!");
+  }
+  else
+  {
+    Console.Writeline("CPU wins the game!");
   }
 }
+// Function to convert the number choice into a string.
