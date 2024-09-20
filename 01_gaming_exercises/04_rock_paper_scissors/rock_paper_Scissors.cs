@@ -16,7 +16,7 @@ class Template
     // Output game rules.
     Console.Writeline("Welcome, " + playerName + "! Let's play Rock, Paper, Scissors.");
     Console.Writeline("Rules:")
-    Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.")
+    Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.");
     Console.Writeline("The first player to score 5 points wins.");
     // Random number generator for CPU
     Random random = new Random();
