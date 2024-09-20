@@ -1,6 +1,8 @@
 using System;
-class Template {
-  static void Main() {
+class Template 
+{
+  static void Main() 
+  {
     string playerName = "Test Player";
     // Player and CPU score.
     int playerScore;
@@ -50,7 +52,7 @@ class Template {
     Console.Writeline("CPU Score: " + cpuScore);
   }
 
-  // Determine overall winner
+  // Announce overall winner
   if (playerScore == 5)
   {
     Console.Writeline(playerName + " wins the game!");
@@ -60,4 +62,19 @@ class Template {
     Console.Writeline("CPU wins the game!");
   }
 }
-// Function to convert the number choice into a string.
+  // Function to convert the number choice into a string.
+  static string ChoiceToString(int choice)
+  {
+    switch (choice)
+    {
+      case 1:
+        return "Rock";
+      case 2:
+        return "Paper";
+      case 3:
+        return "Scissors";
+      default:
+          return "Invalid choice";
+    }
+  }
+}
