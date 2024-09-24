@@ -15,8 +15,8 @@ class Template
     playerName = Console.Readline();
     // Output game rules.
     Console.Writeline("Welcome, " + playerName + "! Let's play Rock, Paper, Scissors.");
-    Console.Writeline("Rules:")
-    Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.")
+    Console.Writeline("Rules:");
+    Console.Writeline("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.");
     Console.Writeline("The first player to score 5 points wins.");
     // Random number generator for CPU
     Random random = new Random();
@@ -29,7 +29,7 @@ class Template
       cpuChoice = random.Next(1,4);
       // Display choices
       Console.Writeline(playerName + "chose: " + ChoiceToString(playerChoice));
-      Console.Writeline("CPU chpse: " + ChoiceToString(cpuChoice));
+      Console.Writeline("CPU chose: " + ChoiceToString(cpuChoice));
       // Determine winner
       if (playerChoice == cpuChoice)
     {
