@@ -50,4 +50,34 @@ class Template {
 
 
     // Class code
+    namespace CodeMonkey_CSharpCourse {
+
+        internal class Program {
+
+            static void Main(string[] args) {
+                l
+                int age = 56;
+                Player codeMonkeyPlayer = new Player();
+                codeMonkeyPlayer.name = "Code Monkey";
+                codeMonkeyPlayer.SayHello();
+                Player ironManPlayer = new Player();
+                ironManPlayer.name = "Iron Man";
+                ironManPlayer.SayHello();
+
+                Console.WriteLine(codeMonkeyPlayer.getHashCode() + " " + ironManPlayer.getHashCode);
+            }
+
+            class Player {
+                
+                string name = "Code Monkey";
+                public Player() {
+                    Console.WriteLine("Creating Player!");
+                }
+
+                public void SayHello() {
+                    Console.WriteLine($"Hello {name}!");
+                }
+            }
+        }
+    }
 }
